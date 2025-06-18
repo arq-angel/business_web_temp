@@ -1,5 +1,5 @@
 const FooterInfo = {
-    "name": "",
+    "name": "Owner Name",
     "text": "All rights reserved.",
     "links": [
         {
@@ -12,8 +12,8 @@ const FooterInfo = {
 
 const Footer = () => {
     return (
-        <footer className="w-full py-8 px-6 text-center border-t border-gray-300 dark:border-gray-700">
-            <p className="text-lg font-semibold">
+        <footer className="w-full py-8 px-6 text-center border-t border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 transition-colors duration-300">
+            <p className="text-lg font-semibold text-gray-900 dark:text-gray-200">
                 © {new Date().getFullYear()} {`${FooterInfo?.name}. ${FooterInfo?.text}`}
             </p>
 
@@ -24,13 +24,14 @@ const Footer = () => {
                         href={link.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-blue-600 dark:hover:text-blue-400 transition"
+                        className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition"
                     >
                         {link.title}
                     </a>
                 ))}
             </div>
         </footer>
+
     );
 };
 
