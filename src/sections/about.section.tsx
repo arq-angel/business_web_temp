@@ -1,7 +1,7 @@
-import { useAnimateOnScroll } from "@/hooks/useAnimateOnScroll.ts";
+import {useAnimateOnScroll} from "@/hooks/useAnimateOnScroll.ts";
 
 const About = () => {
-    const { ref, isVisible } = useAnimateOnScroll();
+    const {ref, isVisible} = useAnimateOnScroll();
 
     return (
         <section
@@ -11,8 +11,9 @@ const About = () => {
         >
             <div
                 className={`max-w-3xl mx-auto transition-opacity duration-700 ${
-                    isVisible ? "animate-fade-in" : "opacity-0"
+                    isVisible ? "animate-fade-in" : "invisible"
                 }`}
+                style={{willChange: "opacity, transform"}}
             >
                 <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 dark:text-white mb-4">
                     About Us

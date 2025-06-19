@@ -1,4 +1,4 @@
-import { useAnimateOnScroll } from "@/hooks/useAnimateOnScroll";
+import {useAnimateOnScroll} from "@/hooks/useAnimateOnScroll";
 
 const services = [
     {
@@ -20,7 +20,7 @@ const services = [
 ];
 
 const Services = () => {
-    const { ref, isVisible } = useAnimateOnScroll();
+    const {ref, isVisible} = useAnimateOnScroll();
 
     return (
         <section
@@ -30,8 +30,9 @@ const Services = () => {
         >
             <div
                 className={`max-w-5xl mx-auto text-center transition-opacity duration-700 ${
-                    isVisible ? "animate-fade-in" : "opacity-0"
+                    isVisible ? "animate-fade-in" : "invisible"
                 }`}
+                style={{willChange: "opacity, transform"}}
             >
                 <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 dark:text-white mb-10">
                     Our Services

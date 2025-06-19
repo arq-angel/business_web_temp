@@ -38,7 +38,7 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
-    const { ref, isVisible } = useAnimateOnScroll();
+    const {ref, isVisible} = useAnimateOnScroll();
 
     const [currentSlide, setCurrentSlide] = useState(0);
     const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
@@ -68,8 +68,9 @@ const Testimonials = () => {
         >
             <div
                 className={`max-w-3xl mx-auto transition-opacity duration-700 ${
-                    isVisible ? "animate-fade-in" : "opacity-0"
+                    isVisible ? "animate-fade-in" : "invisible"
                 }`}
+                style={{willChange: "opacity, transform"}}
             >
                 <h2 className="text-3xl md:text-4xl font-semibold mb-4">What Our Clients Say</h2>
                 <p className="text-gray-600 dark:text-gray-400 mb-10">

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 import {useAnimateOnScroll} from "@/hooks/useAnimateOnScroll.ts";
 
 const faqs = [
@@ -60,7 +60,7 @@ const faqs = [
 ];
 
 const Faq = () => {
-    const { ref, isVisible } = useAnimateOnScroll();
+    const {ref, isVisible} = useAnimateOnScroll();
 
     const [activeId, setActiveId] = useState<string | null>(null);
 
@@ -76,8 +76,9 @@ const Faq = () => {
         >
             <div
                 className={`max-w-3xl mx-auto transition-opacity duration-700 ${
-                    isVisible ? "animate-fade-in" : "opacity-0"
+                    isVisible ? "animate-fade-in" : "invisible"
                 }`}
+                style={{willChange: "opacity, transform"}}
             >
                 <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 dark:text-white mb-10 text-center">
                     Frequently Asked Questions
