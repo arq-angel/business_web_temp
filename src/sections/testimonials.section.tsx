@@ -68,7 +68,7 @@ const Testimonials = () => {
         >
             <div
                 className={`max-w-3xl mx-auto transition-opacity duration-700 ${
-                    isVisible ? "animate-fade-in opacity-100" : "opacity-0"
+                    isVisible ? "animate-fade-in" : "opacity-0"
                 }`}
             >
                 <h2 className="text-3xl md:text-4xl font-semibold mb-4">What Our Clients Say</h2>

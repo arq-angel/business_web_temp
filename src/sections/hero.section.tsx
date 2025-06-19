@@ -11,10 +11,10 @@ const Hero = () => {
         >
             <div
                 className={`relative max-w-2xl transition-opacity duration-700 ${
-                    isVisible ? "animate-fade-in opacity-100" : "opacity-0"
+                    isVisible ? "animate-fade-in" : "opacity-0"
                 }`}
             >
-                <h1 className="text-4xl md:text-6xl font-bold text-blue-900 dark:text-white mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold text-blue-900 dark:text-white mb-4">
                     Spotless Cleaning, Every Time
                 </h1>
 

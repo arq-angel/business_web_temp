@@ -30,7 +30,7 @@ const Services = () => {
         >
             <div
                 className={`max-w-5xl mx-auto text-center transition-opacity duration-700 ${
-                    isVisible ? "animate-fade-in opacity-100" : "opacity-0"
+                    isVisible ? "animate-fade-in" : "opacity-0"
                 }`}
             >
                 <h2 className="text-3xl md:text-4xl font-semibold text-blue-900 dark:text-white mb-10">
